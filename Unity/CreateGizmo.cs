@@ -1,0 +1,17 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CreateGizmo : MonoBehaviour
+{
+    //기즈모 색상 
+    public Color Mycolor = Color.red;
+    //기즈모 반지름 
+    public float Myraduis = 0.05f;
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Mycolor;
+        Gizmos.DrawSphere(transform.position, Myraduis);
+    }
+}
